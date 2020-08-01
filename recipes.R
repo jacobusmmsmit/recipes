@@ -1,5 +1,3 @@
-# install.packages(c("jsonlite","purrr","magrittr","readr", "tibble","dplyr","stringr","ggplot2"))
-
 library(jsonlite)
 library(purrr)
 library(magrittr)
