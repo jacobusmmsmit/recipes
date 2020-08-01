@@ -1,0 +1,52 @@
+name        	type
+t           	abbr
+tsp         	abbr
+T           	abbr
+tbl         	abbr
+tbs         	abbr
+tbsp        	abbr
+fl oz       	abbr
+cup         	abbr
+p           	abbr
+pt          	abbr
+fl pt       	abbr
+q           	abbr
+qt          	abbr
+fl qt       	abbr
+g           	abbr
+gal         	abbr
+teaspoon    	measurement
+tablespoon  	measurement
+fluid ounce 	measurement
+gill        	measurement
+cup         	measurement
+pint        	measurement
+quart       	measurement
+gallon      	measurement
+ml          	abbr
+mililit     	measurement
+litre       	measurement
+liter       	measurement
+l           	abbr
+dl          	abbr
+decilit     	measurement
+pound       	measurement
+ounce       	measurement
+mg          	abbr
+g           	abbr
+kg          	abbr
+lb          	abbr
+#           	abbr
+oz          	abbr
+milligram   	measurement
+gram        	measurement
+kilogram    	measurement
+mm          	abbr
+cm          	abbr
+m           	abbr
+inch        	measurement
+milimet     	measurement
+centimet    	measurement
+meter       	measurement
+metre       	measurement
+'           	abbr
