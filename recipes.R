@@ -1,3 +1,5 @@
+# install.packages(c("jsonlite","purrr","magrittr","readr", "tibble","dplyr","stringr","ggplot2"))
+
 library(jsonlite)
 library(purrr)
 library(magrittr)
@@ -5,6 +7,7 @@ library(tibble)
 library(dplyr)
 library(readr)
 library(stringr)
+library(ggplot2)
 
 # Download data from https://eightportions.com/datasets/Recipes/#fn:1 and place in data/recipes/
 
@@ -61,6 +64,19 @@ most_popular_ingredients <- all_ingredients %>%
   tibble(ingredient = .) %>%
   group_by(ingredient) %>%
   count() %>%
+  ungroup() %>%
   arrange(-n)
 
-most_popular_ingredients
+most_popular_ingredients %>%
+  head(n=10) %>%
+  ggplot(aes(x=reorder(ingredient,-n), y=n)) +
+    geom_col() +
+    labs(x="Ingredient",y="Count")
+
+ 
+# recipe name search
+recipe_titles %>%
+  unlist() %>%
+  unname() %>%
+  tibble(title = .) %>%
+  filter(str_detect(str_to_lower(title), "pie"))
